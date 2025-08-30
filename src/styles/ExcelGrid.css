@@ -1,0 +1,74 @@
+.excel-grid {
+  overflow: auto;
+  border: 1px solid #d0d0d0;
+  background: #fafbfc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 16px;
+  max-width: 100vw;
+}
+.excel-grid table {
+  background: #f8fafc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px #6366f111;
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 600px;
+}
+.excel-grid th, .excel-grid td {
+  border: 1px solid #e0e0e0;
+  padding: 0;
+  text-align: center;
+  min-width: 80px;
+  height: 36px;
+  background: #f6f8fa;
+  transition: background 0.2s, color 0.2s;
+}
+.excel-grid th {
+  background: #e5e7eb; /* light grey */
+  color: #222;
+  font-weight: 600;
+}
+.excel-grid th:first-child {
+  background: #d1d5db; /* darker grey */
+  color: #222;
+}
+.excel-grid th.highlight, .excel-grid td .cell-focus {
+  background: #fdfcfc !important;
+  color: #414141;
+}
+/* .excel-grid th.highlight, .excel-grid td {
+  background: #414141 !important;
+  color: #0641c0;
+}
+.cell-focus {
+  background: #fdfcfc !important;
+  color: #0641c0;
+} */
+.excel-grid td {
+  background: #fff;
+}
+.excel-grid tr:hover td {
+  background: #f1f5ff;
+}
+.excel-grid input {
+  background: #fff; /* White background */
+  color: #222;
+  width: 100%;
+  min-width: 40px;
+  max-width: 300px;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: background 0.2s, box-shadow 0.2s;
+  overflow-x: auto;
+}
+.excel-grid input.cell-focus {
+  background: #f7f7f8;
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px #6366f155;
+}
